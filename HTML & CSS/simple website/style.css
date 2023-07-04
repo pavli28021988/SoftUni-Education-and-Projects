@@ -1,0 +1,55 @@
+/*navigation bar*/
+
+
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav{
+    background-color: #234465;
+}
+
+nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: block;
+}
+/*article*/
+
+body{
+    font-family:  Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 60%;
+    margin:80px auto
+}
+section h1{
+    text-align: center;
+    font-size: 42px;
+}
+header p{
+    font-style: italic;
+}
+footer{
+    background-color: #234465;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
