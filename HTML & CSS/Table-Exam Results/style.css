@@ -1,0 +1,22 @@
+table, tr, th, td{
+    border: 2px solid #000000;
+    border-collapse: collapse;/*remove the border outside*/
+}
+
+td, th{
+    padding: 10px;
+}
+
+table{
+    width: 50%;
+    
+}
+.bold{
+    font-weight: bold;
+    text-align: center;
+}
+.result{
+    width: 400px;
+    text-align: right;
+    padding-right: 5px;
+}
