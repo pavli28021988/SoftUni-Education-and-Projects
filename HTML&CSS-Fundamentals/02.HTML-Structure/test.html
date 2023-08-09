@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <form action="">
+        <label for="fname">First name:
+
+        </label><br>
+       <input type="text" id="fname" name="fname" value="John"><br>
+       <input type="submit" value="Submit">
+    </form>
+    <h1>Form Attributes</h1>
+    <ol type="1">
+        <li>Action</li>
+        <p>Action: used to specify where the form data is to be sent to the server after submission of the form</p>
+        <!--<form action = "register.php"/>-->
+        <li>Method
+            <p>Method-the Http method that teh browser uses to submit the form</p>
+            <li>Post</li>
+            <!--Post /hides posted form from data=><form method = "POST".../>-->
+            <li>Get</li>
+            <!--Get/shows form data in the URL=><form method="GET".../>-->
+        </li>
+        
+    </ol>
+    <h1>Form Elements</h1>
+    <h2>Input</h2>
+    <p>input-the most important element</p>
+    <input type="text">Text<br>
+    <input type="number">Number<br>
+    <input type="password">password<br>
+    <input type="email">Email<br>
+    <input type="search">Search<br>
+    <input type="checkbox">I agree to the Privacy Policy <span>!!Checkbox</span><br>
+    <input type="radio">I want to receive offers and newsletters  <span>!!Radio input</span><br>
+    <input type="range">Your computer skills level  <span>!!input range</span><br>
+    <input type="submit">Send your request <br>
+    <input type="button">Free registration here <span>!!input button</span> <br>
+    <input type="file">Attach your files:  <span>!!!input file</span> <br>
+
+
+    <h1>Radio Button-Example</h1>
+
+    <form action="/registration.php" method="get">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="male" value="Gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="female" value="Gender">
+
+    </form>
+
+    <h1>Input Validation</h1>
+
+    <input type="text" required="true"/>Please enter a text
+
+    <h1>Form Elements Example</h1>
+
+    Email Address: <input type="email" size="48" name="email" required="true" autofocus placeholder="Enter a valid email address!!!">
+
+
+    <h1>Form Elements-Fieldset</h1>
+
+    <fieldset>
+        <legend>Customers Details</legend>
+        <input type="text" name="fName">
+        <input type="text" name="lName">
+
+    </fieldset>
+    <fieldset>
+        <legend>Order Details</legend>
+        <input type="text" name="quantity">
+        <textarea name="remarks"></textarea>
+
+    </fieldset>
+
+    <h1>Number and Range Fields</h1>
+
+    <fieldset>
+
+        <label for="field_age">Age</label>
+        <input type="number" name="age" id="field_age" min="18" max="99" value="21"><br>
+
+        <label for="field_sat">Satisfaction</label>
+        <input type="range" name="satisfaction" id="field_sat" min="1" max="5" value="3">
+    </fieldset>
+    <h1>Form Elements-Select</h1>
+
+    <form >
+
+        <label for="size">Size</label>
+        <select name="size" id="size">
+            <option value="39">39 EU</option>
+            <option value="40">40 EU</option>
+            <option value="41.5">41.5 EU</option>
+        </select>
+
+    </form>
+    <h1>Form Elements-Textarea</h1>
+
+    <textarea name="area" id="area" cols="30" rows="10">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, earum.
+        Lorem ipsum dolor sit amet.
+        Lorem, ipsum.
+        Lorem ipsum dolor sit amet consectetur.
+
+    </textarea>
+    <h1>Form Elements-Buttons</h1>
+    <h3>Submit button-sends the form data to the server</h3>
+    <input type="submit" value="Apply Now">
+    <h3>Reset button-reset all form fields</h3>
+    <input type="reset">
+    <h3>the button tag defines a clickable  button</h3>
+    <button type="button">Click me!!</button>
+    <h1>HTML-Tables</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+        </tr>
+    </table><br>
+
+    <table>
+        <tbody>
+            <thead>
+                <tr>
+                    <th>Original Url</th>
+                    <th>Visits</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>https://nakov.com</td>
+                <td>160</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total visitors</td>
+                <td>286</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
