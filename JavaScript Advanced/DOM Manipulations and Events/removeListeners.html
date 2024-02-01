@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-left: 15px;
+            background-color: rgb(170, 179, 179);
+            color: rgb(21, 21, 219);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div><input type="username" value="username"></div>
+    <div><input type="password" value="password"></div>
+    
+    <button>Remove focus event</button>
+    <script>
+
+        let password = document.querySelector('input[type="password"]');
+        let button = document.querySelector('button');
+
+        password.addEventListener('focus', focusEvent);
+
+        function focusEvent(){
+            event.target.style.background = '#234465';
+        }
+
+        password.addEventListener('blur', (event)=>{
+            event.target.style.background = '';//clean the input field
+        })
+
+        button.addEventListener('click', ()=>{
+            password.removeEventListener('focus', focusEvent)
+        });
+    </script>
+    
+</body>
+</html>
